@@ -1,0 +1,21 @@
+
+class BlankFinal
+{
+  public static void main(String args[])
+	{
+		Final obj=new Final();
+		obj.display();
+	}
+}
+class Final
+{
+  final int maxvalue;
+ Final()
+ {
+    maxvalue=100;
+ }
+ void display()
+	{
+		System.out.println("value is " +maxvalue);
+	}
+}
