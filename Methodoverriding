@@ -1,0 +1,37 @@
+class Human
+{
+	public void job()
+	{
+		System.out.println("profession");
+	}
+}
+class Doctor extends Human
+{
+	public void job()
+	{
+		System.out.println("service");
+	}
+}
+class Teacher extends Human
+{
+ 	public void job()
+	{
+		System.out.println("Teaching");
+}}
+class MethodOverriding
+{
+	public static void main(String args[])
+	{
+		Human a=new Human();
+		Teacher b=new Teacher();
+		Doctor c=new Doctor();
+		Human d=new Doctor();
+          a.job();
+	    b.job();
+	    c.job();
+           d.job();
+}
+}
+
+
+
