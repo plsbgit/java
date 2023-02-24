@@ -1,0 +1,28 @@
+
+class Interface
+{
+ public static void main(String args[])
+{
+  C a=new C();
+  a.txt1();
+  a.txt2();
+}}
+interface A
+{
+	public abstract void txt1();
+}
+interface B
+{
+	public abstract void txt2();
+}
+class C implements A,B
+{
+	public  void txt1()
+	{
+        System.out.println("hi");
+	}
+	public void txt2()
+	{
+		System.out.println("hello");
+	}
+}
