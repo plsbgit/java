@@ -1,0 +1,20 @@
+class Static
+{	
+	static int x=15;
+	static int y;
+     public static void display(int a)
+  {
+	System.out.println("value of a is " +a);
+	System.out.println("value of x is " +x);
+	System.out.println("value of y is " +y);
+  }
+  static 
+{ 
+	System.out.println("intialization");
+     y=x*100;
+}
+public static void main(String args[])
+{
+	display(150);
+}
+}	
