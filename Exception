@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class UserException
+{
+	public static void main(String args[])
+	{
+		Scanner b=new Scanner(System.in);
+		int a;
+		System.out.println("enter the amount");
+  a=b.nextInt();
+     try
+{
+	if(a<0)
+	{
+		throw new NegativeAmtException("amount should be in negetive");
+	}
+	System.out.println("deposited");
+}
+catch(NegativeAmtException e)
+     {
+	System.out.println(e);
+     }
+}
+}
+
+class NegativeAmtException extends Exception
+{
+ 	String msg;
+    	NegativeAmtException(String msg)
+	{
+	    this.msg=msg;
+	}
+	public String toString()
+	{
+	    return msg;
+	}
+}
+		
+
